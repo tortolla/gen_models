@@ -1,9 +1,7 @@
-version: "3.9"
-
 services:
-  clip:
+  blip:
     build: .
-    container_name: clip-demo
+    container_name: blip-demo
     ports:
       - "8888:8888"      # Jupyter из Dockerfile
     volumes:
