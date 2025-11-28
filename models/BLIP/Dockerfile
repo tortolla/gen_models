@@ -19,6 +19,5 @@ COPY . .
 EXPOSE 8888
 
 # 6. Запуск Jupyter Notebook без токена
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", 
-"--NotebookApp.token="]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--NotebookApp.token="]
 
