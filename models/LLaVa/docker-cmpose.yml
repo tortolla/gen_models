@@ -1,7 +1,7 @@
 services:
   blip:
     build: .
-    container_name: blip2-demo
+    container_name: llama-demo
     ports:
       - "8888:8888"      # Jupyter из Dockerfile
     volumes:
@@ -16,5 +16,6 @@ services:
     #         - driver: nvidia
     #           count: all
     #           capabilities: [gpu]
+
 
 
