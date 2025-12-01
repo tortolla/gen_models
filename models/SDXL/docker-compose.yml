@@ -1,0 +1,21 @@
+services:
+  blip:
+    build: .
+    container_name: blip2-demo
+    ports:
+      - "8888:8888"      # Jupyter из Dockerfile
+    volumes:
+      - .:/app           # монтируем код с хоста внутрь контейнера
+    gpus: all            # использовать все доступные GPU
+    # если на сервере ещё старый docker-compose и ругается на gpus,
+    # можно будет потом заменить на
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+
+
